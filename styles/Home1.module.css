@@ -1,0 +1,306 @@
+/* .body {
+    background-image: url(/backgroundd.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    margin:0px;
+    padding:0px
+} */
+
+.container{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner {
+    display:flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+}
+
+
+   .banner > a {
+    color: white;
+    font-size: large;
+    font: 500 2vmax "Roboto";
+    }
+    .items {
+        display: flex;
+        /* background: rgb(239, 232, 232); */
+        flex-direction: column;
+        margin: 0px;
+        width:100%;
+    }
+    .left{
+        width:20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80vh;
+        left:10vh;
+    }
+    
+    .link > a{
+        color: #d5fc34;
+        font-size: 4vh;
+        transition: all 0.5s;
+        display: flex;
+    }
+    .link > a >img{
+        display: flex;
+        padding:1vh;
+    
+    }
+    .link > a:hover{
+        color: white;
+    }
+    .mid{
+        width:100%;
+        margin-top:3vh; 
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .image{
+        transition: all 0.5s;
+    }
+    .image:hover{
+        transform: rotate(10deg);
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+      animation: shake 0.5s;
+    
+      /* When the animation is finished, start again */
+      animation-iteration-count: infinite;
+    }
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+    .mid > a{
+        margin:auto;
+        color: white;
+        font-size: 2vh;
+        font: 500 3vmax "Roboto";
+        transition: all 0.5s;
+    }
+    .mid > a:hover{
+        color: #9537ff;
+    }
+    .right{
+        width:10%;
+    }
+    .button{
+        width:100%;
+        /* margin-top:1vh; */
+        text-align: center;
+        /* padding-bottom: 4vh; */
+    }
+    .button > Button{
+        background-color: #9537ff; 
+        width:20vh;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 3vh;
+      border-radius: 2vh;
+      transition: all 0.5s;
+    }
+    
+    .button > Button:hover{
+        background-color: #ba84f8; 
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 3.1vh;
+      border-radius: 2vh;
+    }
+    
+    @media screen and (max-width: 900px){
+        .container{
+            background-color: black;
+        }
+        .items {
+            display: flex;
+            flex-direction: column;
+            width:100%;
+        }
+        .link{
+            z-index:-999;
+        }
+        .image{
+            width:40vh;
+            height:25vh;
+        }
+        .mid> a{
+            font-size: 5vh;
+        }
+        .mid{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+      }
+
+/* .body {
+    background-image: url(/backgroundd.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    margin:0px;
+    padding:0px
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner {
+    display:flex;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+}
+.banner > a {
+    color: white;
+    font-size: large;
+    font: 500 2vmax "Roboto";
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.left{
+    width:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left:10%;
+}
+
+.left > a{
+    color: #d5fc34;
+    transition: all 0.5s;
+    display: flex;
+}
+.left > a >img{
+    display: flex;
+    margin-right:10px;
+
+}
+.left > a:hover{
+    color: white;
+}
+.mid{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    transition: all 0.5s;
+}
+.image:hover{
+    transform: rotate(10deg);
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+  /* animation: shake 0.5s; */
+
+  /* When the animation is finished, start again */
+  /* animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+.mid > a{
+    margin:auto;
+    color: white;
+    font-size: 2vh;
+    font: 500 3vmax "Roboto";
+    transition: all 0.5s;
+}
+.mid > a:hover{
+    color: #9537ff;
+}
+.right{
+    width:10%;
+}
+.button > Button{
+    background-color: #9537ff; 
+    width:70px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.button > Button:hover{
+    background-color: #ba84f8; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        background-color: black;
+    }
+    .items {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .left > a{
+        z-index: -1;
+    }
+    .mid{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  } */
